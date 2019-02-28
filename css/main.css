@@ -176,3 +176,14 @@ footer .logo{
   font-weight: bold;
   color: rgba(198, 198, 193, 0.9);
 }
+
+.legal{
+  display: block;
+  width: 100vw;
+  position: absolute;
+  top: 65px;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: rgba(198, 198, 193, 0.7)
+}
