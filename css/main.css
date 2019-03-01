@@ -1,7 +1,15 @@
+/* global */
 body{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+}
+.sub-heading{
+  text-align: center;
+  font-size: 18px;
+  color: #39393e;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* logo */
@@ -9,7 +17,6 @@ body{
   padding: 20px 0 0 20px;
   float: left;
 }
-
 .logo svg{
   width: auto;
   height: 50px;
@@ -17,15 +24,71 @@ body{
   stroke-linejoin: round;
   stroke-width: 10px;
 }
-
 header .logo svg{
   fill: rgba(57, 57, 62, 0.9);
   stroke: rgba(57, 57, 62, 0.9);
 }
-
 header .logo svg:hover{
   fill: rgba(57, 57, 62, 1);
   stroke: rgba(57, 57, 62, 1);
+}
+footer .logo{
+  fill: #c6c6c1;
+  stroke: #c6c6c1;
+}
+
+/*nav */
+.header-nav{
+  float: right;
+  padding-top: 35px;
+}
+.header-nav ul{
+  margin: 0;
+  padding: 0;
+}
+.header-nav li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+.header-nav a{
+  color: rgba(57, 57, 62, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.header-nav a:hover{
+  font-weight: normal;
+  color: rgba(57, 57, 62, 0.9);
+}
+.current a{
+  font-weight: normal;
+  color: rgba(57, 57, 62, 0.9);
+}
+.foot-nav{
+  float: right;
+  padding-top: 35px;
+}
+.foot-nav ul{
+  margin: 0;
+  padding: 0;
+}
+.foot-nav li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+.foot-nav a{
+  color: rgba(198, 198, 193, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+.foot-nav a:hover{
+  font-weight: normal;
+  color: rgba(198, 198, 193, 0.9);
 }
 
 /*header*/
@@ -36,7 +99,6 @@ header{
     position: relative;
     color: #39393e;
 }
-
 .head-bg{
     position: absolute;
     width: 100%;
@@ -46,60 +108,22 @@ header{
     background-position: center;
     background-attachment: fixed;
 }
-
-/* nav */
-.header-nav{
-  float: right;
-  padding-top: 35px;
-}
-
-.header-nav ul{
-  margin: 0;
-  padding: 0;
-}
-
-.header-nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-.header-nav a{
-  color: rgba(57, 57, 62, 0.7);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: lighter;
-}
-
-.header-nav a:hover{
-  font-weight: bold;
-  color: rgba(57, 57, 62, 0.9);
-}
-
-.current a{
-  font-weight: normal;
-  color: rgba(57, 57, 62, 0.9);
-}
-
-/* header title */
 #header-title{
-  position: absolute;
-  display: block;
   width: 100vw;
-  text-align: center;
+  display: block;
+  position: absolute;
   top: 50vh;
   margin-top: -110px;
+  text-align: center;
 }
-
 header h1{
   line-height: 72px;
   font-size: 72px;
+  font-weight: normal;
   text-transform: uppercase;
-  margin: 0;
   letter-spacing: 0.05em;
+  margin: 0;
 }
-
 .kicker{
   text-decoration: none;
   text-transform: uppercase;
@@ -107,83 +131,60 @@ header h1{
   letter-spacing: 0.2em;
 }
 
+/* about */
+.about-lockup{
+  max-width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.face{
+  height: 200px;
+  width: 200px;
+  background-image: url(../img/face.jpg);
+  background-size: contain;
+  border-radius: 50%;
+}
+
 /* footer */
 footer{
   position: relative;
   width: 100vw;
-  height: 90px;
+  height: auto;
   background-image: url(../img/pale-sky.jpg);
   background-position: bottom;
   color: #c6c6c1;
 }
-
 footer h3, footer p{
   margin: 0;
   padding: 0;
 }
-
-footer .logo{
-  fill: #c6c6c1;
-  stroke: #c6c6c1;
-}
-
 #foot-title{
   display: inline-block;
   position: absolute;
   left: 100px;
   top: 20px;
 }
-
 #foot-title h3{
   font-size: 20px;
   font-weight: lighter;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-
 #foot-title .kicker{
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.2em;
 }
-
-.foot-nav{
-  float: right;
-  padding-top: 35px;
-}
-
-.foot-nav ul{
-  margin: 0;
-  padding: 0;
-}
-
-.foot-nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-.foot-nav a{
-  color: rgba(198, 198, 193, 0.7);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.foot-nav a:hover{
-  font-weight: bold;
-  color: rgba(198, 198, 193, 0.9);
-}
-
 .legal{
-  display: block;
+  display: inline-block;
   width: 100vw;
-  position: absolute;
-  top: 65px;
   font-size: 10px;
+  font-weight: lighter;
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(198, 198, 193, 0.7)
+  color: rgba(198, 198, 193, 0.5)
 }
