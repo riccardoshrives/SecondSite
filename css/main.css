@@ -5,11 +5,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 .sub-heading{
+  padding: 100px 0 30px 0;
   text-align: center;
-  font-size: 18px;
-  color: #39393e;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 18px;
+  color: #39393e;
 }
 
 /* logo */
@@ -133,18 +134,69 @@ header h1{
 
 /* about */
 .about-lockup{
-  max-width: 80vw;
+  max-width: 750px;
   display: flex;
   margin: 0 auto;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
-.face{
+.about-lockup .face{
   height: 200px;
   width: 200px;
+  order: 3;
+}
+.about-lockup .face-img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
   background-image: url(../img/face.jpg);
   background-size: contain;
-  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.about-lockup [class^="icon-"]{
+  height: 100px;
+  width: 100px;
+  fill: #2e2c2f;
+}
+.about-lockup .icon-pencil{
+  order: 1;
+}
+.about-lockup .icon-code{
+  order: 5;
+}
+.about-lockup .icon-web{
+  order: 4;
+}
+.about-lockup .icon-video{
+  order: 2;
+}
+.blurb{
+  max-width: 700px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 15px;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #2e2c2f
+}
+@media screen and (max-width:900px){
+  .about-lockup{
+    display: block;
+    text-align: center;
+  }
+  .about-lockup .face{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about-lockup div{
+    display: inline-block;
+  }
+  .about-lockup [class^="icon-"]{
+    margin: 15px;
+  }
 }
 
 /* footer */
@@ -184,7 +236,6 @@ footer h3, footer p{
   font-size: 10px;
   font-weight: lighter;
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(198, 198, 193, 0.5)
 }
