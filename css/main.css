@@ -12,6 +12,11 @@ body{
   font-size: 18px;
   color: #39393e;
 }
+.cf::after{
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* logo */
 .logo{
@@ -180,7 +185,7 @@ header h1{
   font-weight: lighter;
   color: #2e2c2f
 }
-@media screen and (max-width:900px){
+@media (max-width:700px){
   .about-lockup{
     display: block;
     text-align: center;
@@ -198,6 +203,56 @@ header h1{
     margin: 15px;
   }
 }
+
+/* skill lockup */
+.skill-lockup{
+  max-width: 540px;
+  margin: 100px auto;
+  color: rgba(57, 57, 62, 0.8);
+}
+.skill-lockup::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.skill-lockup .skill-unit{
+  width: 270px;
+  float: left;
+}
+.skill-lockup .skill-icon{
+  font-size: 0px;
+  margin: 3px 0 30px;
+}
+.skill-lockup .skill-icon span{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #2e2c2f;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.skill-lockup .skill-icon span::after{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  margin: 2px;
+}
+.skill-lockup .skill-icon.skill-10 span:nth-child(n+11), .skill-lockup .skill-icon.skill-9 span:nth-child(n+10), .skill-lockup .skill-icon.skill-8 span:nth-child(n+9), .skill-lockup .skill-icon.skill-7 span:nth-child(n+8), .skill-lockup .skill-icon.skill-6 span:nth-child(n+7), .skill-lockup .skill-icon.skill-5 span:nth-child(n+6){
+  background: #cccc99;
+}
+@media (max-width:640px) {
+  .skill-lockup{
+    width: 220px;
+  }
+  .skill-lockup .skill-unit{
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
 
 /* footer */
 footer{
