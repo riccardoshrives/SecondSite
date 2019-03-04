@@ -40,8 +40,19 @@ header .logo svg:hover{
   stroke: rgba(57, 57, 62, 1);
 }
 footer .logo{
-  fill: #c6c6c1;
-  stroke: #c6c6c1;
+  float: none;
+  padding: 0;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  fill: rgba(198, 198, 193, 0.7);
+  stroke: rgba(198, 198, 193, 0.7);
+}
+footer .logo svg{
+    width: auto;
+    height: 40px;
+    padding: 20px 0;
 }
 
 /*nav */
@@ -144,7 +155,7 @@ header h1{
   display: flex;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .about-lockup .face{
   height: 200px;
@@ -185,6 +196,9 @@ header h1{
   font-size: 24px;
   font-weight: lighter;
   color: #2e2c2f
+}
+.blurb i{
+  font-weight: 500;
 }
 @media (max-width:700px){
   .about-lockup{
@@ -262,7 +276,7 @@ footer{
   height: auto;
   background-image: url(../img/pale-sky.jpg);
   background-position: bottom;
-  color: #c6c6c1;
+  color: rgba(198, 198, 193, 0.7);
 }
 footer h3, footer p{
   margin: 0;
@@ -271,7 +285,7 @@ footer h3, footer p{
 #foot-title{
   display: inline-block;
   position: absolute;
-  left: 100px;
+  left: 20px;
   top: 20px;
 }
 #foot-title h3{
@@ -288,6 +302,7 @@ footer h3, footer p{
 }
 .legal{
   display: inline-block;
+  margin-top: 10px;
   width: 100vw;
   font-size: 10px;
   font-weight: lighter;
