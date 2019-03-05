@@ -244,11 +244,14 @@ header h1{
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-color: #2e2c2f;
+  background-color: #cccc99;
   margin-right: 8px;
   border-radius: 50%;
 }
-.skill-lockup .skill-icon span::after{
+.skill-lockup .skill-icon.skill-10 span:nth-child(n+11), .skill-lockup .skill-icon.skill-9 span:nth-child(n+10), .skill-lockup .skill-icon.skill-8 span:nth-child(n+9), .skill-lockup .skill-icon.skill-7 span:nth-child(n+8), .skill-lockup .skill-icon.skill-6 span:nth-child(n+7), .skill-lockup .skill-icon.skill-5 span:nth-child(n+6){
+  background: #ccc;
+}
+.skill-lockup .skill-icon.skill-10 span:nth-child(n+11)::after, .skill-lockup .skill-icon.skill-9 span:nth-child(n+10)::after, .skill-lockup .skill-icon.skill-8 span:nth-child(n+9)::after, .skill-lockup .skill-icon.skill-7 span:nth-child(n+8)::after, .skill-lockup .skill-icon.skill-6 span:nth-child(n+7)::after, .skill-lockup .skill-icon.skill-5 span:nth-child(n+6)::after{
   content: '';
   display: block;
   width: 10px;
@@ -256,9 +259,6 @@ header h1{
   background: white;
   border-radius: 50%;
   margin: 2px;
-}
-.skill-lockup .skill-icon.skill-10 span:nth-child(n+11), .skill-lockup .skill-icon.skill-9 span:nth-child(n+10), .skill-lockup .skill-icon.skill-8 span:nth-child(n+9), .skill-lockup .skill-icon.skill-7 span:nth-child(n+8), .skill-lockup .skill-icon.skill-6 span:nth-child(n+7), .skill-lockup .skill-icon.skill-5 span:nth-child(n+6){
-  background: #cccc99;
 }
 @media (max-width:640px) {
   .skill-lockup{
