@@ -44,15 +44,15 @@ footer .logo{
   padding: 0;
   display: inline-block;
   position: absolute;
-  width: 100%;
-  text-align: center;
+  margin-left: 50%;
+  top: 20px;
+  left: -20px;
   fill: rgba(198, 198, 193, 0.7);
   stroke: rgba(198, 198, 193, 0.7);
 }
 footer .logo svg{
-    width: auto;
+    width: 40px;
     height: 40px;
-    padding: 20px 0;
 }
 
 /*nav */
