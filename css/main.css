@@ -22,58 +22,11 @@ body{
   font-weight: 500;
   color: #bcbc75;
 }
-
-
-/* logo */
-.logo{
-  padding: 20px 0 0 20px;
-  float: left;
-}
-.logo svg{
-  width: auto;
-  height: 50px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 10px;
-}
-header .logo svg{
-  fill: rgba(57, 57, 62, 0.9);
-  stroke: rgba(57, 57, 62, 0.9);
-}
-header .logo svg:hover{
-  fill: rgba(57, 57, 62, 1);
-  stroke: rgba(57, 57, 62, 1);
-}
-
-/*nav */
-.header-nav{
-  float: right;
-  padding-top: 35px;
-}
-.header-nav ul{
-  margin: 0;
-  padding: 0;
-}
-.header-nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-.header-nav a{
-  color: rgba(57, 57, 62, 0.7);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: lighter;
-}
-.header-nav a:hover{
-  font-weight: normal;
-  color: rgba(57, 57, 62, 0.9);
-}
 .current a{
   font-weight: normal;
   color: rgba(57, 57, 62, 0.9);
 }
+
 
 
 /*header*/
@@ -81,17 +34,12 @@ header{
     height: 100vh;
     width: 100%;
     background-color: #ccc;
-    position: relative;
-    color: #39393e;
-}
-.head-bg{
-    position: absolute;
-    width: 100%;
-    height: 100%;
     background-image: url(../img/pale-sky.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
+    color: #39393e;
 }
 #header-title{
   width: 100vw;
@@ -114,6 +62,52 @@ header h1{
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 0.2em;
+}
+.head-logo svg{
+  width: auto;
+  height: 50px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 10px;
+  fill: rgba(57, 57, 62, 0.9);
+  stroke: rgba(57, 57, 62, 0.9);
+}
+.head-logo svg:hover{
+  fill: rgba(57, 57, 62, 1);
+  stroke: rgba(57, 57, 62, 1);
+}
+.header-nav ul{
+  margin: 0;
+  padding: 0;
+}
+.header-nav li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+.header-nav a{
+  color: rgba(57, 57, 62, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.header-nav a:hover{
+  font-weight: normal;
+  color: rgba(57, 57, 62, 0.9);
+}
+
+/*header flex box*/
+.head-bar{
+  display: flex;
+}
+.head-logo{
+  padding: 20px 0 0 20px;
+  float: left;
+}
+.header-nav{
+  float: right;
+  padding-top: 35px;
 }
 
 /* about */
@@ -281,6 +275,7 @@ footer h3, footer p{
   font-weight: normal;
   color: rgba(198, 198, 193, 0.9);
 }
+/*footer flex box*/
 #main-footer{
   position: relative;
   display: flex;
