@@ -42,7 +42,7 @@ header{
     color: #39393e;
 }
 #header-title{
-  width: 100vw;
+  width: 100%;
   display: block;
   position: absolute;
   top: 50vh;
@@ -64,8 +64,8 @@ header h1{
   letter-spacing: 0.2em;
 }
 .head-logo svg{
-  width: auto;
-  height: 50px;
+  width: 50px;
+  height: auto;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 10px;
@@ -81,7 +81,6 @@ header h1{
   padding: 0;
 }
 .header-nav li{
-  float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
@@ -96,18 +95,16 @@ header h1{
   font-weight: normal;
   color: rgba(57, 57, 62, 0.9);
 }
-
 /*header flex box*/
 .head-bar{
+  padding-top: 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 .head-logo{
-  padding: 20px 0 0 20px;
-  float: left;
-}
-.header-nav{
-  float: right;
-  padding-top: 35px;
+  padding: 0 0 0 20px;
 }
 
 /* about */
