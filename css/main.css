@@ -44,21 +44,6 @@ header .logo svg:hover{
   fill: rgba(57, 57, 62, 1);
   stroke: rgba(57, 57, 62, 1);
 }
-footer .logo{
-  float: none;
-  padding: 0;
-  display: inline-block;
-  position: absolute;
-  margin-left: 50%;
-  top: 20px;
-  left: -20px;
-  fill: rgba(198, 198, 193, 0.7);
-  stroke: rgba(198, 198, 193, 0.7);
-}
-footer .logo svg{
-    width: 40px;
-    height: 40px;
-}
 
 /*nav */
 .header-nav{
@@ -89,30 +74,7 @@ footer .logo svg{
   font-weight: normal;
   color: rgba(57, 57, 62, 0.9);
 }
-.foot-nav{
-  float: right;
-  padding-top: 35px;
-}
-.foot-nav ul{
-  margin: 0;
-  padding: 0;
-}
-.foot-nav li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-.foot-nav a{
-  color: rgba(198, 198, 193, 0.7);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: normal;
-}
-.foot-nav a:hover{
-  font-weight: normal;
-  color: rgba(198, 198, 193, 0.9);
-}
+
 
 /*header*/
 header{
@@ -273,7 +235,6 @@ header h1{
 
 /* footer */
 footer{
-  position: relative;
   width: 100%;
   height: auto;
   background-image: url(../img/pale-sky.jpg);
@@ -282,13 +243,7 @@ footer{
 }
 footer h3, footer p{
   margin: 0;
-  padding: 0;
-}
-#foot-title{
-  display: inline-block;
-  position: absolute;
-  left: 20px;
-  top: 20px;
+  padding: 0 20px 0 20px;
 }
 #foot-title h3{
   font-size: 20px;
@@ -302,8 +257,64 @@ footer h3, footer p{
   font-size: 12px;
   letter-spacing: 0.2em;
 }
+.foot-logo svg{
+  width: 40px;
+  height: 40px;
+  fill: rgba(198, 198, 193, 0.7);
+  stroke: rgba(198, 198, 193, 0.7);
+}
+.foot-nav ul{
+  margin: 0;
+  padding: 0;
+}
+.foot-nav li{
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+.foot-nav a{
+  color: rgba(198, 198, 193, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+}
+.foot-nav a:hover{
+  font-weight: normal;
+  color: rgba(198, 198, 193, 0.9);
+}
+#main-footer{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#foot-title{
+  -webkit-order: 1;
+  -moz-order: 1;
+  -ms-order: 1;
+  -o-order: 1;
+  order: 1;
+  background-color: chartreuse;
+}
+.foot-logo{
+  -webkit-order: 2;
+  -moz-order: 2;
+  -ms-order: 2;
+  -o-order: 2;
+  order: 2;
+  background-color: aqua;
+}
+.foot-nav{
+  -webkit-order: 3;
+  -moz-order: 3;
+  -ms-order: 3;
+  -o-order: 3;
+  order: 3;
+  background-color: darkmagenta
+}
+
 .legal{
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   width: 100vw;
   font-size: 10px;
