@@ -7,13 +7,9 @@ body{
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
-.cf::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-.sub-heading{
+h2{
   padding: 100px 0 30px 0;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -27,6 +23,14 @@ body{
 header .current a{
   font-weight: normal;
   color: rgba(57, 57, 62, 0.9);
+}
+.alt-section{
+  background-color: #c6c6c1;
+}
+.cf::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -196,7 +200,68 @@ header h1{
   margin: 2px;
 }
 
-
+/* work */
+.thumb-container{
+  max-width: 80%;
+  margin: 0px auto;
+  padding-bottom: 100px;
+}
+.thumb-container .thumb-unit{
+  display: block;
+  width: 33%;
+  float: left;
+  position: relative;
+  padding-top: 20%;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thumb-container .thumb1{
+  background-image: url(../img/projects/rs-design/thumb.jpg);
+}.thumb-container .thumb2{
+  background-image: url(../img/projects/subsqnt/thumb.jpg);
+}.thumb-container .thumb3{
+  background-image: url(../img/projects/karl-faraj/thumb.png);
+}.thumb-container .thumb4{
+  background-image: url(../img/projects/imaginations/thumb.jpg);
+}.thumb-container .thumb5{
+  background-image: url(../img/projects/healthy-science/thumb.png);
+}.thumb-container .thumb6{
+  background-image: url(../img/projects/sketches/thumb.jpg);
+}
+.thumb-container .thumb-unit .thumb-overlay{
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  height: 100%;
+  background-color: rgba(204, 204, 153, 0.9);
+  text-align: center;
+  transition: top 0.5s;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.thumb-container .thumb-unit .thumb-overlay strong{
+  display: block;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: white;
+}
+.thumb-container .thumb-unit:hover .thumb-overlay{
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+}
+.thumb-container .thumb-unit:hover{
+  
+}
 /* footer */
 footer{
   width: 100%;
@@ -315,6 +380,10 @@ footer h3, footer p{
   .about-lockup [class^="icon-"]{
     margin: 15px;
   }
+  .thumb-container .thumb-unit{
+    width: 50%;
+    padding-top: 33%;
+  }
   
 }
 
@@ -326,5 +395,8 @@ footer h3, footer p{
   .skill-lockup .skill-unit{
     width: 220px;
     margin: 0 auto;
+  }
+  .thumb-container .thumb-unit .thumb-overlay strong{
+    font-size: 18px;
   }
 }
