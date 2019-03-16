@@ -20,7 +20,7 @@ h2{
   font-weight: 500;
   color: #bcbc75;
 }
-header .current a{
+header nav .current{
   font-weight: normal;
   color: rgba(57, 57, 62, 0.9);
 }
@@ -81,15 +81,12 @@ header h1{
   fill: rgba(57, 57, 62, 1);
   stroke: rgba(57, 57, 62, 1);
 }
-.header-nav ul{
+.header-nav{
   margin: 0;
   padding: 0;
 }
-.header-nav li{
-  display: inline;
-  padding: 0 20px 0 20px;
-}
 .header-nav a{
+  padding: 0 20px 0 20px;
   color: rgba(57, 57, 62, 0.7);
   text-decoration: none;
   text-transform: uppercase;
@@ -100,6 +97,15 @@ header h1{
   font-weight: normal;
   color: rgba(57, 57, 62, 0.9);
 }
+label{
+  font-size: 32px;
+  display: none;
+  margin: 0 20px;
+}
+#toggle{
+  display: none;  
+}
+
 /*header flex box*/
 .head-bar{
   padding-top: 20px;
@@ -389,6 +395,34 @@ footer h3, footer p{
 
 
 @media (max-width:640px) {
+  .head-bar{
+    display: block;
+  }
+  .head-logo{
+    clear: left;
+    float: left;
+  }
+  label{
+    float: right;
+    clear: right;
+    display: block;
+    cursor: pointer;
+  }
+  .menu{
+    display: none;
+    clear: both;
+    text-align: right;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .menu a{
+    display: block;
+    line-height: 40px; 
+  }
+  #toggle:checked + .menu{
+    display: block;
+  }
+  
   .skill-lockup{
     width: 220px;
   }
